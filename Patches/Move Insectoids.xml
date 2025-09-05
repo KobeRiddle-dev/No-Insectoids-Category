@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+
+    <!-- Move Insectoids -->
+    <Operation Class="PatchOperationReplace">
+        <xpath>Defs/ThingDef[designationCategory="VFEI2_Insectoids"]/designationCategory</xpath>
+        <value>
+            <designationCategory>Ferny_Animals</designationCategory>
+        </value>
+    </Operation>
+
+    <!-- Remove Insectoid Category -->
+    <Operation Class="PatchOperationRemove">
+        <xpath>Defs/DesignationCategoryDef[defName="VFEI2_Insectoids"]</xpath>
+    </Operation>
+
+    <!-- Add hive designators to Animals category -->
+    <Operation Class="PatchOperationAdd">
+        <success>Always</success>
+        <xpath>Defs/DesignationCategoryDef[defName="Ferny_Animals"]/specialDesignatorClasses</xpath>
+        <value>
+            <li>VFEInsectoids.Designator_AreaHiveExpand</li>
+            <li>VFEInsectoids.Designator_AreaHiveClear</li>
+        </value>
+    </Operation>
+
+</Patch>

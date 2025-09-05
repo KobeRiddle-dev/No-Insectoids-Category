@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>No Insectoids Category | Insectoids to Animals Category</name>
+	<author>Kobe Riddle</author>
+	<packageId>KobeRiddle.NoInsectoidsCategory</packageId>
+	<supportedVersions>
+		<li>1.6</li>
+	</supportedVersions>
+	<modDependencies>
+		<li>
+			<packageId>Ferny.AnimalsCategory</packageId>
+			<displayName>Animals Category</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3238028136</steamWorkshopUrl>
+		</li>
+		<li>
+			<packageId>OskarPotocki.VFE.Insectoid2</packageId>
+			<displayName>Vanilla Factions Expanded: Insectoids 2</displayName>
+			<steamWorkshopUrl>https://steamcommunity.com/sharedfiles/filedetails/?id=3309003431</steamWorkshopUrl>
+		</li>
+	</modDependencies>
+	<incompatibleWith>
+		<li>Ferny.HiveCategory</li>
+	</incompatibleWith>
+	<description>Removes the Insectoids (Hive) category and moves everything therein to the Animals architect category.\nRecommended to be used together with Clean Categories Dropdowns: *Extended*.</description>
+	<loadAfter>
+
+		<!-- Ludeon -->
+		<li>Ludeon.Rimworld</li>
+		<li>Ludeon.Rimworld.Royalty</li>
+		<li>Ludeon.Rimworld.Ideology</li>
+		<li>Ludeon.Rimworld.Biotech</li>
+		<li>Ludeon.Rimworld.Anomaly</li>
+		<li>Ludeon.Rimworld.Odyssey</li>
+
+		<!-- Dependencies -->
+		<li>Ferny.AnimalsCategory</li>
+		<li>OskarPotocki.VFE.Insectoid2</li>
+	</loadAfter>
+</ModMetaData>
